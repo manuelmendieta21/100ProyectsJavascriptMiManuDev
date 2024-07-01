@@ -118,7 +118,8 @@
         margin: 15px;
         height: 50%;
         width: 90%;
-        background-color: blue;
+        border-radius: 30px;
+        background-color: rgba(239, 239, 241, 0.335);
     }
 
 }
