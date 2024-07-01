@@ -38,8 +38,6 @@
         filter: drop-shadow(5px 5px 5px black);
         color: rgb(210, 219, 228);
         text-align: center;
-     
-    
     }
     div.search{
         margin: 30px;
@@ -76,6 +74,48 @@
         height: 250px;
         width: 250px;
         filter: drop-shadow(5px 5px 5px black);
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+        height: 300PX;
+        width: auto;
+        margin: 20px;
+        padding: 30px;
+    }
+    
+    .imageWeather{
+        display: flex;
+        justify-content: center;
+    }
+
+    input.textoinput{
+        transform: translate(0px, 72.5117px); 
+        position: relative; top: -164px; left: 2px;
+        width: 280px;
+        height: 40px;  
+        margin: 5px;
+        border-radius: 10px;
+        text-align: center;
+        font-size: medium;
+        box-shadow: 3px 3px 3px black;
+    }
+    div.search{
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        
+    }
+    h1{
+        padding: 15px;
+        transform: translate(0px, 72.5117px); 
+        position: relative; top: -144px; left: 2px;
+        font-family: "Bungee", sans-serif;
+        font-size: 50px;
+        
+        color: rgb(6, 44, 82);
+        text-align: center;
     }
 
 }
