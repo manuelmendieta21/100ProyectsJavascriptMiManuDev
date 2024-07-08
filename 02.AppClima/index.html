@@ -5,20 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
-    <script src="app.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <script defer src="app.js"></script> <!-- defer para cargar el script después del HTML -->
     <title>App Clima MiManuDev</title>
 </head>
 <body>
     <header>
-        <div class="imageWeather"><img src="img/Weather+Targeting.png" alt="logoWeather"></div>
-        <h1>App Clima </h1>
-        <div class="search"><input class="textoinput" type="text" placeholder="Ciudad"></div>
+        <div class="imageWeather"><img src="img/solnube2.svg" alt="logoWeather"><h1>App Clima </h1></div>
         
+        <div class="search"><input class="textoinput" type="text" placeholder="Ciudad"></div>
     </header>
-<menu>
-    <div class="menudesing"></div>
-</menu>
-
+    <menu>
+        <div class="info-container">
+            <h3 class="city-name"></h3>
+            <p class="date-info"><span class="day"></span><span class="date"></span></p>
+            <h2 class="weather-deg"></h2>
+            <h3 class="weather-condition"></h3>
+            <h3 class="humidity"></h3>
+        </div>
+    </menu>
 </body>
 </html>
