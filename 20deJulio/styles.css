@@ -11,14 +11,14 @@ body {
 
 .containerTitle{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-
+    width: 150px;
+    color: #fff;
+    text-align: center;
 }
 
 
 .title1{
-    font-size: 60px;
+    font-size: 50px;
     font-family: "Permanent Marker", cursive;
     font-weight: 200;
     font-style: normal;
@@ -31,6 +31,19 @@ body {
     animation: title-animation 2s infinite;
 }
 
+.title3{
+    font-size: 60px;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 200;
+    font-style: normal;
+    color: #fff;
+  text-shadow:
+    3px 3px 0 #d55121,
+    -3px 3px 0 #4d23f8,
+    -3px -3px 0 hsl(64, 91%, 55%),
+    3px -3px 0 #f4ff26;
+    animation: title-animation 2s infinite;
+}
 
 @keyframes title-animation {
     0% { transform: scale(1); }
