@@ -1,0 +1,82 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #111111;
+    
+}
+
+.containerTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.title1{
+    font-size: 60px;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 200;
+    font-style: normal;
+    color: #fff;
+  text-shadow:
+    3px 3px 0 #d55121,
+    -3px 3px 0 #4d23f8,
+    -3px -3px 0 hsl(64, 91%, 55%),
+    3px -3px 0 #f4ff26;
+    animation: title-animation 2s infinite;
+}
+
+
+@keyframes title-animation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.flag {
+    position: relative;
+    width: 300px;
+    height: 180px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.stripe {
+    position: absolute;
+    animation: wave 2s infinite ease-in-out;
+}
+
+.yellow {
+    background-color: #ebf70b;
+    width: 300px;
+    height: 80px;
+    top: 0;
+    z-index: 3;
+}
+
+.blue {
+    background-color: #022571;
+    width: 300px;
+    height: 60px;
+    top: 60px;
+    z-index: 2;
+}
+
+.red {
+    background-color: rgb(180, 9, 29);
+    width: 300px;
+    height: 50px;
+    top: 120px;
+    z-index: 1;
+}
+
+@keyframes wave {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(-10px); }
+    100% { transform: translateX(0); }
+}
