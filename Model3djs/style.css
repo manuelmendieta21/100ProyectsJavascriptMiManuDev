@@ -1,0 +1,153 @@
+
+body {
+    background-color: #ffffff;
+}
+
+:root{
+    --dark-mode-width:90px;
+    --dark-mode-height: 40px;
+}
+
+
+.mainC{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 3px;
+    margin: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    margin: 0 auto;
+    max-height: 400px;
+    max-width: 500px; /* Ajustar el tamaño máximo del contenedor */
+}
+
+canvas {
+    display: block;
+    
+}
+
+footer {
+    background-color: #f0f0f0;
+    color: #1b1b1b;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+/* Estilos para modo oscuro */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode .content {
+    background-color: #121212;
+}
+
+body.dark-mode footer {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+#toggleMode {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+
+
+
+.kyra{
+    display: flex;
+    background-color: rgb(202, 200, 200);
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: 500px;
+    width: auto;
+}
+
+
+.iframeKyra{
+    width: 600px;
+    height: 450px;
+
+}
+
+.darkmodebutton {
+    border: 1px solid black;
+    width: var(--dark-mode-width);
+    height: var(--dark-mode-height);
+    background-color: rgb(240, 188, 121);
+    border-radius: 30px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+.darkmodebutton .icon {
+    width: 30px;
+    height: 30px;
+    background-color: #4c41ce;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1s ease;
+}
+
+body.dark-mode .darkmodebutton .icon {
+    transform: translateX(48px);
+    
+}
+
+.icon img {
+    width: 70%;
+    height: 60%;
+}
+
+.iconS {
+    display: block;
+}
+
+.iconM {
+    display: none;
+}
+
+/* Mostrar la luna en modo oscuro y el sol en modo claro */
+body.dark-mode .iconS {
+    display: none;
+}
+
+body.dark-mode .iconM {
+    display: block;
+}
+
+.kyra {
+    display: flex;
+    background-color: rgb(202, 200, 200);
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: 500px;
+    width: auto;
+}
+
+.iframeKyra {
+    width: 600px;
+    height: 450px;
+}

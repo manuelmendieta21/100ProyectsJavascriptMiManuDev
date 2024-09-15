@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <!--asociamos la libreria de Three.js y otros componentes que nos sirven para emular la orbita del modelo 3d --> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128/examples/js/controls/OrbitControls.js"></script>
+    <!--Ingresamos los iconos del sol y la luna para crear nuestro boton darkmodebutton --> 
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Visualizador 3D con Texto</title>
+
+</head>
+
+<body class="dark-mode">
+    <main>
+            <button id="toggleMode" class="darkmodebutton">
+                <div  class="icon">
+                    <img src="img/moon1.svg" alt="moon" class="iconM">
+                    <img src="img/sun1.svg" alt="sunny" class="iconS">
+                </div>
+            </button>
+    </main>
+    
+
+    <div class="content">  
+    </div>
+
+
+    <div class="kyra">
+    <iframe class="iframeKyra" src="https://lumalabs.ai/embed/c8b9328e-d8ed-46bf-8a79-ae0c12e9063b?mode=sparkles&background=%23ffffff&color=%23000000&showTitle=true&loadBg=true&logoPosition=bottom-left&infoPosition=bottom-right&cinematicVideo=undefined&showMenu=false" ç
+     title="luma embed" style="border: none;"></iframe>"
+    </div>
+
+
+    <footer>
+        <p>2024 >MM</p>
+    </footer>
+
+    <script id="luma-checkout" src="https://embed.lu.ma/checkout-button.js"></script>
+    <script id="model3d" src="./model3d.js"></script>
+</body>
+</html>
